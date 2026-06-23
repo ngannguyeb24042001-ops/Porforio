@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary: #3b82f6;
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-border: #e2e8f0;
+}
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
