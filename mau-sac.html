@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng màu - Nguyễn Ngân</title>
+    <style>
+      :root {
+        --mau-1: #3b82f6;
+        --mau-2: rgb(16, 185, 129);
+        --mau-3: hsl(38, 92%, 50%);
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+      }
+      h1 {
+        color: var(--mau-1);
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      div {
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .mau-chinh {
+        background: var(--mau-1);
+        color: white;
+      }
+
+      .mau-phu {
+        background: var(--mau-2);
+        color: white;
+      }
+
+      .mau-nen {
+        background: var(--mau-3);
+        color: #1e293b;
+      }
+      #mau-dac-biet {
+        border: 3px solid rgb(239, 68, 68);
+        padding: 15px;
+        background: #f8fafc;
+      }
+      button {
+        margin: 20px 0;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 6px;
+        background: var(--mau-1);
+        color: white;
+        cursor: pointer;
+      }
+
+      body.dark-mode {
+        --mau-1: #60a5fa;
+        --mau-2: #34d399;
+        --mau-3: #fbbf24;
+
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Bảng màu của Nguyễn Ngân</h1>
+    <button id="toggle-dark">Toggle Dark Mode</button>
+    <p>Trang này dùng để thực hành CSS Selector và các định dạng màu.</p>
+
+    <div class="mau-chinh">Đây là màu chính (HEX)</div>
+
+    <div class="mau-phu">Đây là màu phụ (RGB)</div>
+
+    <div class="mau-nen">Đây là màu nền (HSL)</div>
+
+    <div id="mau-dac-biet">
+      Đây là phần sử dụng ID Selector với viền màu đỏ.
+    </div>
+    <script>
+      document.getElementById("toggle-dark").addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+    </script>
+  </body>
+</html>

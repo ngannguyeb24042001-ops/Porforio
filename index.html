@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <style></style>
   </head>
   <body>
@@ -22,6 +22,7 @@
       <h1>Portfolio của tôi</h1>
       <nav>
         <span>Nguyễn Thị Kim Ngân</span>
+        <div class="test-box"></div>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
@@ -33,78 +34,90 @@
     </header>
     <main>
       <section id="about">
-        <h2>Nguyễn Thị Kim Ngân</h2>
-        <p>
-          Tôi là sinh viên ngành <strong>Khoa học Máy tính</strong>, đang theo
-          đuổi sự nghiệp trong<em> lĩnh vực phát triển frontend.</em>
-        </p>
-        <img
-          src="images/avatar.jpg"
-          alt="Ảnh đại diện"
-          width="200"
-          height="200"
-        />
+        <div class="container">
+          <h2>Nguyễn Thị Kim Ngân</h2>
+          <p>
+            Tôi là sinh viên ngành <strong>Khoa học Máy tính</strong>, đang theo
+            đuổi sự nghiệp trong<em> lĩnh vực phát triển frontend.</em>
+          </p>
+        </div>
+        <div>
+          <img
+            class="about-avatar"
+            src="images/avatar.jpg"
+            alt="Ảnh đại diện"
+            width="200"
+            height="200"
+          />
+        </div>
       </section>
       <section id="experience">
-        <h2>Kinh Nghiệm</h2>
-        <article>
-          <h3>Workshop HTML & CSS</h3>
-          <p>Học những kiến thức nền tảng về phát triển website.</p>
-        </article>
+        <div class="container">
+          <h2>Kinh Nghiệm</h2>
+          <article>
+            <h3>Workshop HTML & CSS</h3>
+            <p>Học những kiến thức nền tảng về phát triển website.</p>
+          </article>
 
-        <article>
-          <h3>Hackathon</h3>
-          <p>Tham gia cuộc thi lập trình và phát triển dự án nhóm.</p>
-        </article>
+          <article>
+            <h3>Hackathon</h3>
+            <p>Tham gia cuộc thi lập trình và phát triển dự án nhóm.</p>
+          </article>
 
-        <article>
-          <h3>Tham quan doanh nghiệp</h3>
-          <p>
-            Giao lưu với các công ty công nghệ và tìm hiểu môi trường làm việc.
-          </p>
-        </article>
+          <article>
+            <h3>Tham quan doanh nghiệp</h3>
+            <p>
+              Giao lưu với các công ty công nghệ và tìm hiểu môi trường làm
+              việc.
+            </p>
+          </article>
+        </div>
       </section>
       <section id="projects">
-        <h2>Dự án</h2>
-        <ol>
-          <li>
-            <strong>Portfolio cá nhân</strong> - HTML thuần <br />
-            <a href="#">Demo</a>
-            <a href="https://github.com/user" target="_blank" rel="noopener"
-              >GitHub</a
-            >
-            <br />
-          </li>
-          <li>
-            <strong>Todo App</strong> - Ứng dụng quản lý công việc đơn giản sử
-            dụng JavaScript.
-            <a href="#">Demo</a>
-            <a href="https://github.com/user" target="_blank" rel="noopener"
-              >GitHub</a
-            >
-            <br />
-          </li>
-        </ol>
+        <div class="container">
+          <h2>Dự án</h2>
+          <ol>
+            <li>
+              <strong>Portfolio cá nhân</strong> - HTML thuần <br />
+              <a href="#">Demo</a>
+              <a href="https://github.com/user" target="_blank" rel="noopener"
+                >GitHub</a
+              >
+              <br />
+            </li>
+            <li>
+              <strong>Todo App</strong> - Ứng dụng quản lý công việc đơn giản sử
+              dụng JavaScript.
+              <a href="#">Demo</a>
+              <a href="https://github.com/user" target="_blank" rel="noopener"
+                >GitHub</a
+              >
+              <br />
+            </li>
+          </ol>
+        </div>
       </section>
       <section id="contact">
-        <h2>Liên hệ</h2>
-        <p>
-          Nếu bạn có bất kỳ câu hỏi nào hoặc muốn hợp tác, vui lòng liên hệ tới
-          email:
-          <a href="mailto:ngan.nguyen@example.com">ngan.nguyen@example.com</a>
-        </p>
-        <form action="#" method="post">
-          <label for="name">Tên:</label>
-          <input type="text" id="name" name="name" required /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
-          <label for="subject">Tiêu đề:</label>
-          <input type="text" id="subject" name="subject" required /><br />
-          <label for="message">Tin nhắn:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea
-          ><br />
-          <button type="submit">Gửi</button>
-        </form>
+        <div class="container">
+          <h2>Liên hệ</h2>
+          <p>
+            Nếu bạn có bất kỳ câu hỏi nào hoặc muốn hợp tác, vui lòng liên hệ
+            tới email:
+            <a href="mailto:ngan.nguyen@example.com">ngan.nguyen@example.com</a>
+          </p>
+          <form action="#" method="post">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
+            <label for="subject">Tiêu đề:</label>
+            <input type="text" id="subject" name="subject" required /><br />
+            <label for="message">Tin nhắn:</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea
+            ><br />
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
       </section>
       <section id="github">
         <h2>GitHub</h2>
@@ -116,9 +129,11 @@
         </p>
       </section>
       <section id="hero">
-        <h2>Nguyễn Thị Kim Ngân</h2>
-        <p>Aspiring Frontend Developer</p>
-        <a href="files/cv.pdf" download>Tải CV</a>
+        <div class="container">
+          <h2>Nguyễn Thị Kim Ngân</h2>
+          <p>Aspiring Frontend Developer</p>
+          <a href="files/cv.pdf" download>Tải CV</a>
+        </div>
       </section>
     </main>
     <footer>
