@@ -19,27 +19,28 @@
   </head>
   <body>
     <header>
-      <h1>Portfolio của tôi</h1>
-      <nav>
-        <span>Nguyễn Thị Kim Ngân</span>
-        <div class="test-box"></div>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/tranb" target="_blank" rel="noopener"
-          >GitHub</a
-        >
-      </nav>
+      <div class="container nav-container">
+        <a href="#" class="nav-logo"> Nguyễn Thị Kim Ngân </a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section id="about">
         <div class="container">
           <h2>Nguyễn Thị Kim Ngân</h2>
           <p>
-            Tôi là sinh viên ngành <strong>Khoa học Máy tính</strong>, đang theo
-            đuổi sự nghiệp trong<em> lĩnh vực phát triển frontend.</em>
+            Tôi là sinh viên ngành <strong>Hệ thống thông tin quản lý</strong>,
+            đang theo đuổi sự nghiệp trong<em>
+              lĩnh vực phát triển frontend.</em
+            >
           </p>
+          <div class="about-content"></div>
         </div>
         <div>
           <img
@@ -129,10 +130,48 @@
         </p>
       </section>
       <section id="hero">
+        <div class="container hero-container">
+          <div class="hero-text">
+            <p class="hero-greeting">Xin chào 👋</p>
+
+            <h1>Nguyễn Thị Kim Ngân</h1>
+
+            <p class="hero-subtitle">
+              Mình là sinh viên ngành Hệ thống Thông tin Quản lý (MIS), đang học
+              HTML, CSS và JavaScript để trở thành Frontend Developer.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary"> Xem dự án </a>
+
+              <a href="#contact" class="btn btn-secondary"> Liên hệ </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="images/avatar.jpg" alt="Ảnh đại diện" />
+          </div>
+        </div>
+      </section>
+      <section id="skills">
         <div class="container">
-          <h2>Nguyễn Thị Kim Ngân</h2>
-          <p>Aspiring Frontend Developer</p>
-          <a href="files/cv.pdf" download>Tải CV</a>
+          <h2>Kỹ năng</h2>
+
+          <div class="skills-list">
+            <span class="skill-tag">HTML5</span>
+
+            <span class="skill-tag">CSS3</span>
+
+            <span class="skill-tag">JavaScript</span>
+
+            <span class="skill-tag">Git</span>
+
+            <span class="skill-tag">GitHub</span>
+
+            <span class="skill-tag">Flexbox</span>
+
+            <span class="skill-tag">Responsive Design</span>
+          </div>
         </div>
       </section>
     </main>
